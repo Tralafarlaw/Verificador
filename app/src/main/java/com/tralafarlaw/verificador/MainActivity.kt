@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     ss.toString()[ss.lastIndex] != '7'||
                     ss.toString()[ss.lastIndex] != '8'||
                     ss.toString()[ss.lastIndex] != '9'){
-                    Toast.makeText(this, "Porfavor ingrese su CI sin extension")
+                    Toast.makeText(this, "Porfavor ingrese su CI sin extension", Toast.LENGTH_LONG).show()
                     return@setOnClickListener
                 }
                 if (ss.toString()[ss.lastIndex] == '2'||
