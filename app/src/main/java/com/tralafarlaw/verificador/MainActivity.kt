@@ -18,17 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         button.setOnClickListener {
             editTextNumber.text.also {ss ->
-                if(ss.isNullOrBlank() || ss.isNullOrEmpty() ||
-                    ss.toString()[ss.lastIndex] != '0'||
-                    ss.toString()[ss.lastIndex] != '1'||
-                    ss.toString()[ss.lastIndex] != '2'||
-                    ss.toString()[ss.lastIndex] != '3'||
-                    ss.toString()[ss.lastIndex] != '4'||
-                    ss.toString()[ss.lastIndex] != '5'||
-                    ss.toString()[ss.lastIndex] != '6'||
-                    ss.toString()[ss.lastIndex] != '7'||
-                    ss.toString()[ss.lastIndex] != '8'||
-                    ss.toString()[ss.lastIndex] != '9'){
+                if(ss.isNullOrBlank() || ss.isNullOrEmpty() ){
                     Toast.makeText(this, "Porfavor ingrese su CI sin extension", Toast.LENGTH_LONG).show()
                     return@setOnClickListener
                 }
